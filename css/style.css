@@ -1,0 +1,19 @@
+h1,h2,h3,h4,h5,h6,i,ul,li,em,a,div,section {
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+}
+html,body{
+    padding: 0px;
+    marging: 0px;
+}
+ul{
+    list-style-type: none;
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    color: #5bc0de;
+}
