@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <title>homework</title>
-    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
 </head>
 <body>
 
-<!--    五环
+<!--
+    五环
     <div class="homework1"></div>
     <div class="homework2"></div>
     <div class="homework3"></div>
@@ -20,7 +21,7 @@
     <div class="left1"></div>
 -->
 
-<!--    bug:margin塌陷    content与wrapper同时使用margin-top，生效最大值
+<!--    bug:margin塌陷    content与wrapper同时使用margin-top，只生效最大值    bug1
 
 -->
 
@@ -32,7 +33,8 @@
 <span class="box1">123</span>
 <span class="box2">444</span>
 <div class="demo1">123321</div>&lt;!&ndash;需要套div的不用bfc解决&ndash;&gt;影响html结构的写法都不适用
-<div class="demo2">222222</div>
+<div class="demo2">222222</div>     解决方案:用数学在css中计算解决   bug2
+
 -->
 
 <!--
@@ -107,16 +109,62 @@
     <div class="content11">2</div>
     <div class="content11">3</div>
 </div>
-position:absolute; float:left/right;
+
+用了position:absolute; float:left/right;
 打内部把元素转换成inline-block;(行级块元素是被内容撑开的，所以边框紧贴内容)
+
 -->
 
-<!--淘宝导航栏-->
+<!--    淘宝导航栏
 <ul class="nav">
     <li class="list-item"><a href="#">天猫</a></li>
     <li class="list-item"><a href="#">淘宝</a></li>
     <li class="list-item"><a href="#">天猫商城</a></li>
+    清除浮动
 </ul>
-清除浮动
+-->
+
+<!--    溢出容器，要打点展示  如：今天太阳出...  -->
+<!--    单行打点
+<p style="width:300px; height:20px; line-height: 20px; color: #ff4400; border:1px solid black; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">撑开的，所以边框撑开的，所以边框撑开的，所以边框</p>
+
+    overflow: hidden;       溢出的文字不实现
+    white-space: nowrap;    超出的文字不换行
+    text-overflow: ellipsis;文字溢出有省略号
+-->
+<!--    多行截断
+<p style="color: #f40; width:300px; height:40px; line-height: 20px; border:1px solid black;overflow: hidden;">元素是被内容撑开的，所以边框紧撑开的，所以边框紧撑开的，所以边框撑开的，所以边框</p>
+-->
+
+<!--    图片背景处理
+    background-size:
+    text-indent: 缩进
+    white-spzce:nowrap;强行一行
+-->
+<!--<a href="#" class="bg" target="_blank">淘宝网</a>   解决方案1  -->
+<!--<a href="#" class="bg-2" target="_blank">淘宝网</a>   解决方案2    -->
+
+<!--
+    行级元素只能嵌套行级元素
+    块级元素可以嵌套任何元素
+
+    <p> 标签里面不能套块元素
+    <a> 标签里面不能套<a>标签
+
+    <p style="border: 1px solid black;">
+    <div></div>
+</p>
+                两个不能嵌套
+<a href="#">
+    <a href="#"></a>
+</a>
+-->
+
+<!--
+<span class="ddq">hello</span> 123
+行级块元素里面存在文字后，后面的文本会跟着此元素内的文字低端动
+vertical-align:1px/-1px;调对齐线
+-->
+
 </body>
 </html>
