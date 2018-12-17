@@ -256,3 +256,60 @@ a:hover {
 }
 
 
+
+
+/*生活*/
+
+.life-message{
+    width:100%;
+    overflow: hidden;
+    background-color: white;
+    border-top:1px solid #a6a6a6;
+    border-bottom:1px solid #a6a6a6;
+    margin:10px auto;
+}
+.message-title{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding:10px 3px;
+}
+.message-banner{
+    width:100%;
+    height:auto;
+    padding:8px;
+}
+.message-content{
+    padding:6px;
+}
+.like{
+    width:75px;
+    margin:10px 20px;
+}
+.share{
+    width:75px;
+    margin-left:40%;
+}
+.message-img{
+    width:100%;
+    overflow: hidden;
+}
+.message-img li{
+    width:14.2%;
+    overflow: hidden;
+    float:left;
+}
+.message a{
+    width:100%;
+    overflow: hidden;
+}
+.message-img img{
+    width:100%;
+    weight:auto;
+}
+
+
+
+
+
+
