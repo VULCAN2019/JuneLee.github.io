@@ -8,7 +8,7 @@
 body{
     font-size:14px;
     font-family:"Microsoft YaHei UI";
-
+    min-width: 1920px;
 }
 a{
     text-decoration: none;
